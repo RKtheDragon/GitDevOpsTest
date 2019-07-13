@@ -26,4 +26,33 @@ Help for doing work with Git
 
 22) Now go to github.com and log into your dashboard 
 23) And create a new Repository named "GitDevOpsTest"
+24) In the CLI of your machine give command - 
+		git remote add origin https://github.com/RKtheDragon/GitDevOpsTest
+	--------------- Will Produce you following output ---------------
+	-----------------------------------------------------------------
+	fatal: remote origin already exists.
 
+	C:\Users\rkg07\Documents\Git\Java-DevOps>git push -u origin master
+	Enumerating objects: 10, done.
+	Counting objects: 100% (10/10), done.
+	Delta compression using up to 4 threads
+	Compressing objects: 100% (6/6), done.
+	Writing objects: 100% (10/10), 1.43 KiB | 52.00 KiB/s, done.
+	Total 10 (delta 0), reused 0 (delta 0)
+	To https://github.com/RKtheDragon/GitDevOpsTest
+	 * [new branch]      master -> master
+	Branch 'master' set up to track remote branch 'master' from 'origin'.
+	-----------------------------------------------------------------------
+	
+	And in Security History of GitHub account you may see following:
+	-----------------------------------------------------------------------
+	oauth_authorization.create  – 
+	Personal access token (git: https://github.com/ 
+	on LAPTOP-MCK235LC at 13-Jul-2019 13:51)
+	
+	-----------------------------------------------------------------------
+25) Now go you https://github.com in your repository and see if any changes are
+    there or not, you will not see any changes over there
+26) So we will push it 
+	git push -u origin master   [Will are working with master not branch]
+27) So now refresh GitHub browser page to see changes and files uploaded there 
