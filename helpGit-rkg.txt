@@ -99,4 +99,40 @@ Branch 'myBranch1' set up to track remote branch 'myBranch1' from 'origin'.
 42) If you click on myBranch1 then you may see about.html there
 43) If you click on master branch you will not see about.html there
 44) To switch back to master branch 
-45) In CLI give command - 
+45) In CLI give command - git checkout master
+-------------
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+------------------------
+
+46) Here you can't see updated version of helpGit-rkg.txt
+47) To view updated version you have to merge it 
+48) In CLI give command - git merge myBranch1
+-----------------------------------
+Updating 5a6209d..a2d5bcd
+Fast-forward
+ about.html      |  0
+ helpGit-rkg.txt | 44 ++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 44 insertions(+)
+ create mode 100644 about.html
+-------------------------------------
+
+49) Now you can see in master its showing helpGit-rkg.txt updated version 
+50) And about.html available in master on local machine but not on GitHub.com 
+51) In CLI give command - git push -u origin master     [Output is below]
+-----------------------------
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 740 bytes | 28.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/RKtheDragon/GitDevOpsTest
+   187b0c0..a2d5bcd  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+-----------------------------
+
+52) Not refresh GitHub.com repository in master you can see about.html 
+53) 
