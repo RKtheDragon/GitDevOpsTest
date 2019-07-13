@@ -1,0 +1,29 @@
+Help for doing work with Git
+
+1)  Download Git from https://git-scm.com/ 
+2)  Install Git as per instructions 
+3)  Add gitHub email here - git config --global user.email "gitHubEmail@gmail.com"
+4)  Add gitHub user name -  git config --global user.user "RKtheDragon"
+5)  Make a new folder in your disk i.e. DevOps-Java in Documnets/Git/ folder
+6)  Open CLI and goto Documnets/Git/DevOps-Java using cd command
+7)  Give there command - git init
+8)  Open folder in Explorer and you can see empty .git has created 
+9)  Go to CLI type - git status
+10)  In CLI create a new File - test.txt using copy con >> test.txt  [Ctrl+C]
+11)  Give command - git status
+12) Give command - git add test.txt
+13) Give command - git status
+14) Give command - git commit -m "File test.txt has been added"
+15) Now open test.txt in text editor and write some lines in it save and exit.
+16) Now open text editor and add a new file "index.html" and exit
+17) In CLI give command - git status
+18) In CLI give command - git add .   [dot for everything and *.txt for all txt files]
+19) In CLI give command - git status
+20) In CLI give command - git commit -m "Commiting for test.txt modified file and adding index.html"
+21) In CLI give command - git status   [You will find all clear]
+
+======
+
+22) Now go to github.com and log into your dashboard 
+23) And create a new Repository named "GitDevOpsTest"
+
