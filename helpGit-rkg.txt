@@ -74,4 +74,5 @@ M       helpGit-rkg.txt
 33) Open text editor and create a new file as about.html 
 34) In CLI give command - git add about.html 
 35) In CLI give command - git status     [untracked files about.html]
-36) In CLI give command - git 
+36) In CLI give command - git add .      [dot to add and modify all]
+37) 
