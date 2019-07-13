@@ -56,3 +56,22 @@ Help for doing work with Git
 26) So we will push it 
 	git push -u origin master   [Will are working with master not branch]
 27) So now refresh GitHub browser page to see changes and files uploaded there 
+
+=============
+
+28) In CLI give command -  git log    [will show all logs you done ]
+29) In CLI give command - git --help   [ will display all options for git ]
+30) In GitHub browser account you may see total number of commits, branches, and
+	total number of releases and contributer 
+
+==============
+
+31) To create a new branch - git branch myBranch1
+32) In CLI give command - git checkout myBranch1    [output will be as below]
+Switched to branch 'myBranch1'
+M       helpGit-rkg.txt
+
+33) Open text editor and create a new file as about.html 
+34) In CLI give command - git add about.html 
+35) In CLI give command - git status     [untracked files about.html]
+36) In CLI give command - git 
