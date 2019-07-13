@@ -77,5 +77,26 @@ M       helpGit-rkg.txt
 36) In CLI give command - git add .      [dot to add and modify all]
 37) In CLI give command - git commit -m "about.html added and committed"
 38) Now we will push about.html to myBranch1 in GitHub repository
-39) In CLI give command - git push -u origin myBranch1
-40) 
+39) In CLI give command - git push -u origin myBranch1    [output below]
+---------------------
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 2.53 KiB | 198.00 KiB/s, done.
+Total 12 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), done.
+remote:
+remote: Create a pull request for 'myBranch1' on GitHub by visiting:
+remote:      https://github.com/RKtheDragon/GitDevOpsTest/pull/new/myBranch1
+remote:
+To https://github.com/RKtheDragon/GitDevOpsTest
+ * [new branch]      myBranch1 -> myBranch1
+Branch 'myBranch1' set up to track remote branch 'myBranch1' from 'origin'.
+---------------------
+40) Go to GitHub repository and refresh browser, to see there are two branches
+41) If you click on branches it will show current branch is myBranch1
+42) If you click on myBranch1 then you may see about.html there
+43) If you click on master branch you will not see about.html there
+44) To switch back to master branch 
+45) In CLI give command - 
