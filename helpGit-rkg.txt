@@ -75,4 +75,7 @@ M       helpGit-rkg.txt
 34) In CLI give command - git add about.html 
 35) In CLI give command - git status     [untracked files about.html]
 36) In CLI give command - git add .      [dot to add and modify all]
-37) 
+37) In CLI give command - git commit -m "about.html added and committed"
+38) Now we will push about.html to myBranch1 in GitHub repository
+39) In CLI give command - git push -u origin myBranch1
+40) 
