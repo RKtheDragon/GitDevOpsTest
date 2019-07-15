@@ -135,4 +135,46 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 -----------------------------
 
 52) Not refresh GitHub.com repository in master you can see about.html 
-53) 
+53) If you will go to myBranch1 then there you may see message 
+    This branch is even with master 
+54) Now master branch and myBranch1 branch are even and we dont need myBranch1
+55) So in next steps we are going to delete the branch
+54) In CLI give command - git branch -d myBranch1
+55) This will delete branch from local machine only
+56) If you will go to GitHub.com even now it is showing there 
+57) To delete from REMOTE give following command
+58) git push origin --delete myBranch1
+--------------------------------------
+To https://github.com/RKtheDragon/GitDevOpsTest
+ - [deleted]         myBranch1
+--------------------------------------
+
+59) Now go to GitHub.com and refresh browser to see how many branches are there
+
+60) You should create tags to make version history, so someday using tags 
+    you may restore the previous version
+61) To create tags simply type -  git tag TAG_NAME 
+    git tag version-1.0
+62) git tag      [this will show tag name of your branch]
+63) To creating descriptive tag use -a option as below
+64) git tag -a ver-1.1 -m "Message for new tag and new version"
+65) descriptive tag stores all info of user who created it and a message
+66) We can use "git tag" or "git show version-1.0" or "git tag -l "v*.*" "
+	to view the tags 
+67) In GitHub.com refresh repository and see there are 0 releases or 0 tags
+68) In CLI -  git push origin version-1.0   [push tag to remote]
+69) To push all tags at once in console give command
+70) git push --tags 
+71) So in the browser at GitHub.com you may see releases there 
+72) To delete tags if required - git tag -d ver-1.1 or git tag --delete ver-1.1
+73) Now to be sure for deleted tags - git tag   [will show only present tags]
+74) To delete tags from GitHub.com we will give following commands
+75) git push origin -d ver-1.1  or git push origin --delete ver-1.1 [check browser]
+76) To delete multiple tags -  git tag -d ver-1.1 ver-1.2 [space seperated]
+77) Now check log  -  git log [There you will find a checksome number, by SHA1 algorithem]
+78) How to checkout a tag [means working with tag version]
+79) git checkout -b <branchName> <tagName>
+80) How to create a tag with past commit message
+81) git tag <tagName> <checksome of Commit>
+82) In CLI give command - git tag ver-1.1 5b02dgR.....[entire 40 digit checksome]
+83) 
